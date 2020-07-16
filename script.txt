@@ -1,0 +1,6 @@
+# 모델을 정의한다.
+./node_modules/.bin/sequelize-cli model:generate --name Note --attributes subject:string, detail:string, isDeleted:boolean
+
+# 정의된 모델을 데이터베이스와 동기화한다.
+./node_modules/.bin/sequelize db:migrate
+
